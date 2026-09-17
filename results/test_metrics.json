@@ -1,0 +1,344 @@
+[
+  {
+    "model": "mistralai/mistral-small-3.2-24b-instruct",
+    "mode": "zero-shot",
+    "n": 80,
+    "accuracy": 0.4625,
+    "macro_f1": 0.38022218745110314,
+    "balanced_accuracy": 0.4625,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.18181818181818182,
+      "ND": 0.4819277108433735,
+      "PO": 0.8571428571428571
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.1,
+      "ND": 1.0,
+      "PO": 0.75
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.7166666666666667,
+    "cost_usd": 0.0014440000000000002,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.01805,
+    "latency_mean_s": 1.7193938885378883,
+    "latency_p95_s": 2.843907287233742,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        18,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "mistralai/mistral-small-3.2-24b-instruct",
+    "mode": "four-shot",
+    "n": 80,
+    "accuracy": 0.6875,
+    "macro_f1": 0.6460022148394242,
+    "balanced_accuracy": 0.6875,
+    "per_class_f1": {
+      "CR": 0.32,
+      "LP": 0.5116279069767442,
+      "ND": 0.8,
+      "PO": 0.9523809523809523
+    },
+    "per_class_recall": {
+      "CR": 0.2,
+      "LP": 0.55,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.16666666666666666,
+    "cost_usd": 0.003724,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.04655,
+    "latency_mean_s": 2.636565060963039,
+    "latency_p95_s": 4.987990769074524,
+    "confusion_matrix": [
+      [
+        4,
+        12,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        11,
+        6,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        20,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "mode": "zero-shot",
+    "n": 80,
+    "accuracy": 0.825,
+    "macro_f1": 0.8221210340775558,
+    "balanced_accuracy": 0.8250000000000001,
+    "per_class_f1": {
+      "CR": 0.7272727272727273,
+      "LP": 0.7727272727272727,
+      "ND": 0.8695652173913043,
+      "PO": 0.918918918918919
+    },
+    "per_class_recall": {
+      "CR": 0.6,
+      "LP": 0.85,
+      "ND": 1.0,
+      "PO": 0.85
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.1,
+    "cost_usd": 0.008544,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.10679999999999999,
+    "latency_mean_s": 2.1424248957620877,
+    "latency_p95_s": 3.0437242398766102,
+    "confusion_matrix": [
+      [
+        12,
+        7,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        17,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        17,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "mode": "four-shot",
+    "n": 80,
+    "accuracy": 0.9,
+    "macro_f1": 0.8986778540554284,
+    "balanced_accuracy": 0.9,
+    "per_class_f1": {
+      "CR": 0.7777777777777778,
+      "LP": 0.8695652173913043,
+      "ND": 1.0,
+      "PO": 0.9473684210526315
+    },
+    "per_class_recall": {
+      "CR": 0.7,
+      "LP": 1.0,
+      "ND": 1.0,
+      "PO": 0.9
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.022624,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.2828,
+    "latency_mean_s": 2.7317170270893256,
+    "latency_p95_s": 5.345184635362238,
+    "confusion_matrix": [
+      [
+        14,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        18,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-30b-a3b-instruct",
+    "mode": "zero-shot",
+    "n": 80,
+    "accuracy": 0.55,
+    "macro_f1": 0.5005626475314167,
+    "balanced_accuracy": 0.55,
+    "per_class_f1": {
+      "CR": 0.4444444444444444,
+      "LP": 0.17391304347826086,
+      "ND": 0.5633802816901409,
+      "PO": 0.8205128205128205
+    },
+    "per_class_recall": {
+      "CR": 0.3,
+      "LP": 0.1,
+      "ND": 1.0,
+      "PO": 0.8
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.5166666666666667,
+    "cost_usd": 0.002444,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.030549999999999997,
+    "latency_mean_s": 1.4928773250358063,
+    "latency_p95_s": 3.181079618752119,
+    "confusion_matrix": [
+      [
+        6,
+        1,
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        15,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        3,
+        16,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-30b-a3b-instruct",
+    "mode": "four-shot",
+    "n": 80,
+    "accuracy": 0.8375,
+    "macro_f1": 0.8270006360285724,
+    "balanced_accuracy": 0.8374999999999999,
+    "per_class_f1": {
+      "CR": 0.6451612903225806,
+      "LP": 0.782608695652174,
+      "ND": 0.9302325581395349,
+      "PO": 0.95
+    },
+    "per_class_recall": {
+      "CR": 0.5,
+      "LP": 0.9,
+      "ND": 1.0,
+      "PO": 0.95
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.05,
+    "cost_usd": 0.005397600000000001,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.06747,
+    "latency_mean_s": 1.7257923119483167,
+    "latency_p95_s": 2.534772696168511,
+    "confusion_matrix": [
+      [
+        10,
+        8,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        18,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        19,
+        0
+      ]
+    ]
+  }
+]

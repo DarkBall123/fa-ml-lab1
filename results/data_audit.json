@@ -1,0 +1,57 @@
+{
+  "source": "https://github.com/stefyste/RIAWELC",
+  "commit": "d53d3daf28ed3901f9db89764c030d19ced7696d",
+  "seed": 17092026,
+  "source_group_count": 29,
+  "source_group_split_counts": {
+    "support": 5,
+    "validation": 6,
+    "test": 9,
+    "application": 9
+  },
+  "label_mapping": {
+    "Difetto1": "CR",
+    "Difetto2": "PO",
+    "Difetto4": "LP",
+    "NoDifetto": "ND"
+  },
+  "total_files": 24407,
+  "classes": {
+    "CR": 7635,
+    "PO": 6320,
+    "LP": 4452,
+    "ND": 6000
+  },
+  "original_splits": {
+    "testing": 2443,
+    "training": 15863,
+    "validation": 6101
+  },
+  "unique_pixel_hashes": 21893,
+  "duplicate_excess": 2514,
+  "conflicting_hash_groups": 0,
+  "cross_original_split_duplicate_groups": 2465,
+  "decode_failures": [],
+  "sizes": {
+    "227x227": 24407
+  },
+  "modes": {
+    "L": 24407
+  },
+  "selected_count": 260,
+  "near_duplicate_candidates_rejected": 1,
+  "near_duplicate_method": "64-bit dHash Hamming distance <=4, exclusion among all selected objects",
+  "min_selected_hamming": 6,
+  "experiment_splits": {
+    "support": 4,
+    "validation": 16,
+    "test": 80,
+    "application": 160
+  },
+  "unique_classes": {
+    "LP": 4001,
+    "PO": 5680,
+    "ND": 5396,
+    "CR": 6816
+  }
+}

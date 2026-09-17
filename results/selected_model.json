@@ -1,0 +1,57 @@
+{
+  "model": "openai/gpt-4.1-mini",
+  "mode": "four-shot",
+  "n": 80,
+  "accuracy": 0.9,
+  "macro_f1": 0.8986778540554284,
+  "balanced_accuracy": 0.9,
+  "per_class_f1": {
+    "CR": 0.7777777777777778,
+    "LP": 0.8695652173913043,
+    "ND": 1.0,
+    "PO": 0.9473684210526315
+  },
+  "per_class_recall": {
+    "CR": 0.7,
+    "LP": 1.0,
+    "ND": 1.0,
+    "PO": 0.9
+  },
+  "invalid_rate": 0.0,
+  "defect_miss_rate": 0.0,
+  "cost_usd": 0.022624,
+  "cost_missing_count": 0,
+  "cost_per_1000_usd": 0.2828,
+  "latency_mean_s": 2.7317170270893256,
+  "latency_p95_s": 5.345184635362238,
+  "confusion_matrix": [
+    [
+      14,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      20,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      20,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      18,
+      0
+    ]
+  ]
+}

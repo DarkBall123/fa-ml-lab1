@@ -1,0 +1,44 @@
+{
+  "author": "Азаров Владимир Сергеевич",
+  "group": "ПМ23-2",
+  "date": "2026-09-17",
+  "task": "Four-class radiographic weld defect classification",
+  "dataset_commit": "d53d3daf28ed3901f9db89764c030d19ced7696d",
+  "seed": 17092026,
+  "model_ids": [
+    "mistralai/mistral-small-3.2-24b-instruct",
+    "openai/gpt-4.1-mini",
+    "qwen/qwen3-vl-30b-a3b-instruct"
+  ],
+  "modes": [
+    "zero-shot",
+    "four-shot"
+  ],
+  "temperature": 0,
+  "max_tokens": 80,
+  "shots_per_class": 1,
+  "output": {
+    "label": "CR|LP|ND|PO"
+  },
+  "split_sizes": {
+    "support": 4,
+    "validation": 16,
+    "test": 80,
+    "application": 160
+  },
+  "selection": "Among four-shot models with invalid rate <= 5%, maximize test Macro-F1, then minimize defect miss rate, then cost per 1000 images. Application set is untouched until selection.",
+  "hypotheses": {
+    "H1": "Mean paired four-shot minus zero-shot Macro-F1 across the three models is positive on the comparison set.",
+    "H2": "Selected four-shot model achieves Macro-F1 >=0.70 and defect miss rate <=0.05 on the application set."
+  },
+  "cost_guard_usd": 0.85,
+  "scope": "Pilot study. No ViT training or parameter updates; visual in-context learning only. Source-group identity is inferred from the filename prefix before _Img.",
+  "max_retries": 3,
+  "retry_http_codes": [
+    429,
+    502,
+    503
+  ],
+  "allow_provider_fallbacks": false,
+  "execution_note": "Initial concurrency 8, then 4 after provider rate limiting. Completed responses retained; failed preliminary attempts preserved separately. Gemini Flash Lite excluded before final comparison."
+}
