@@ -1,0 +1,12 @@
+[
+  "1 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale / A. Dosovitskiy [et al.] // International Conference on Learning Representations. 2021. URL: https://arxiv.org/abs/2010.11929 (дата обращения: 17.09.2026).",
+  "2 Snell J. Prototypical Networks for Few-shot Learning / J. Snell, K. Swersky, R. Zemel // Advances in Neural Information Processing Systems. 2017. Vol. 30. URL: https://arxiv.org/abs/1703.05175 (дата обращения: 17.09.2026).",
+  "3 Language Models are Few-Shot Learners / T. B. Brown [et al.] // Advances in Neural Information Processing Systems. 2020. Vol. 33. URL: https://arxiv.org/abs/2005.14165 (дата обращения: 17.09.2026).",
+  "4 Flamingo: a Visual Language Model for Few-Shot Learning / J.-B. Alayrac [et al.] // Advances in Neural Information Processing Systems. 2022. Vol. 35. URL: https://arxiv.org/abs/2204.14198 (дата обращения: 17.09.2026).",
+  "5 Multiclass Evaluation of Vision Transformers for Industrial Welding Defect Detection / A. Contreras Ortiz, R. Rioda Santiago, D. E. Hernandez, M. Lopez-Montiel // Mathematical and Computational Applications. 2025. Vol. 30, № 2. Article 24. DOI: 10.3390/mca30020024.",
+  "6 Totino B. RIAWELC: A Novel Dataset of Radiographic Images for Automatic Weld Defects Classification / B. Totino, F. Spagnolo, S. Perri // International Journal of Electrical and Computer Engineering Research. 2023. Vol. 3, № 1. DOI: 10.53375/ijecer.2023.320.",
+  "7 DINOv2: Learning Robust Visual Features without Supervision / M. Oquab [et al.]. 2023. URL: https://arxiv.org/abs/2304.07193 (дата обращения: 17.09.2026).",
+  "8 WinCLIP: Zero-/Few-Shot Anomaly Classification and Segmentation / J. Jeong [et al.] // CVPR. 2023. URL: https://arxiv.org/abs/2303.14814 (дата обращения: 17.09.2026).",
+  "9 AnomalyGPT: Detecting Industrial Anomalies Using Large Vision-Language Models / Z. Gu [et al.] // AAAI. 2024. URL: https://arxiv.org/abs/2308.15366 (дата обращения: 17.09.2026).",
+  "10 Qwen3-VL Technical Report / S. Bai [et al.]. 2025. URL: https://arxiv.org/abs/2511.21631 (дата обращения: 17.09.2026)."
+]

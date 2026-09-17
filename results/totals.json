@@ -1,19 +1,24 @@
 {
-  "final_predictions": 736,
+  "final_predictions": 1504,
   "excluded_attempts": 124,
   "embedded_retry_attempts": 21,
-  "recorded_cost_usd": 0.09812422,
+  "recorded_cost_usd": 0.14716817199999999,
   "final_cost_missing": 1,
   "few_shot_delta_macro_f1": {
     "mistralai/mistral-small-3.2-24b-instruct": 0.26578002738832107,
     "openai/gpt-4.1-mini": 0.07655681997787267,
-    "qwen/qwen3-vl-30b-a3b-instruct": 0.3264379884971558
+    "qwen/qwen3-vl-30b-a3b-instruct": 0.3264379884971558,
+    "openai/gpt-4.1-nano": 0.0033282780623367647,
+    "amazon/nova-lite-v1": 0.0,
+    "qwen/qwen3-vl-8b-instruct": 0.40255729309149946,
+    "qwen/qwen3-vl-32b-instruct": 0.21691910645516999
   },
-  "mean_delta": 0.22292494528778317,
+  "mean_delta": 0.1845113590674794,
   "final_providers": {
-    "OpenAI": 351,
-    "Alibaba": 192,
+    "OpenAI": 543,
+    "Alibaba": 576,
     "DeepInfra": 192,
-    "unknown": 1
+    "unknown": 1,
+    "Amazon Bedrock": 192
   }
 }

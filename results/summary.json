@@ -67,6 +67,138 @@
   },
   {
     "n": 80,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 0.9875,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.01368792,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.171099,
+    "latency_mean_s": 1.7069467250497836,
+    "latency_p95_s": 1.9076354208489645,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        19
+      ]
+    ],
+    "stage": "test",
+    "model": "amazon/nova-lite-v1",
+    "mode": "four-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1802,
+    "macro_f1_ci95": [
+      0.0,
+      0.0
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 79
+  },
+  {
+    "n": 80,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 1.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.0034176,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.042719999999999994,
+    "latency_mean_s": 1.123616444797517,
+    "latency_p95_s": 1.4374685211339964,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20
+      ]
+    ],
+    "stage": "test",
+    "model": "amazon/nova-lite-v1",
+    "mode": "zero-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1791,
+    "macro_f1_ci95": [
+      0.0,
+      0.0
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 80
+  },
+  {
+    "n": 80,
     "accuracy": 0.6875,
     "macro_f1": 0.6460022148394242,
     "balanced_accuracy": 0.6875,
@@ -123,10 +255,10 @@
     "model": "mistralai/mistral-small-3.2-24b-instruct",
     "mode": "four-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1802,
+    "bootstrap_valid_draws": 1790,
     "macro_f1_ci95": [
-      0.5450083261581203,
-      0.7472121276395173
+      0.5480250385477993,
+      0.7629019428284134
     ],
     "transport_errors": 0,
     "malformed_responses": 0
@@ -189,10 +321,10 @@
     "model": "mistralai/mistral-small-3.2-24b-instruct",
     "mode": "zero-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1791,
+    "bootstrap_valid_draws": 1768,
     "macro_f1_ci95": [
-      0.24143277032621296,
-      0.5702186621518017
+      0.24115638330932,
+      0.5704557261303242
     ],
     "transport_errors": 0,
     "malformed_responses": 0
@@ -255,10 +387,10 @@
     "model": "openai/gpt-4.1-mini",
     "mode": "four-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1790,
+    "bootstrap_valid_draws": 1784,
     "macro_f1_ci95": [
-      0.6970912178020302,
-      0.9797527226195705
+      0.7010124791576404,
+      0.9761363636363636
     ],
     "transport_errors": 0,
     "malformed_responses": 0
@@ -321,10 +453,142 @@
     "model": "openai/gpt-4.1-mini",
     "mode": "zero-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1768,
+    "bootstrap_valid_draws": 1789,
     "macro_f1_ci95": [
-      0.5978987610546984,
-      0.8889072228081515
+      0.6043006863331457,
+      0.8894391817796072
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.575,
+    "macro_f1": 0.4970953805250914,
+    "balanced_accuracy": 0.575,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.16,
+      "ND": 0.7843137254901961,
+      "PO": 0.6440677966101694
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.1,
+      "ND": 1.0,
+      "PO": 0.95
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.18333333333333332,
+    "cost_usd": 0.007848,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.0981,
+    "latency_mean_s": 2.492178694827453,
+    "latency_p95_s": 3.6838942690868857,
+    "confusion_matrix": [
+      [
+        5,
+        3,
+        9,
+        3,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        19,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "openai/gpt-4.1-nano",
+    "mode": "four-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1787,
+    "macro_f1_ci95": [
+      0.39272496082341507,
+      0.583027062418158
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.5625,
+    "macro_f1": 0.4937671024627546,
+    "balanced_accuracy": 0.5625,
+    "per_class_f1": {
+      "CR": 0.5,
+      "LP": 0.08695652173913043,
+      "ND": 0.6153846153846154,
+      "PO": 0.7727272727272727
+    },
+    "per_class_recall": {
+      "CR": 0.35,
+      "LP": 0.05,
+      "ND": 1.0,
+      "PO": 0.85
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.4166666666666667,
+    "cost_usd": 0.0026,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.032499999999999994,
+    "latency_mean_s": 2.1285225364175857,
+    "latency_p95_s": 2.916802195820491,
+    "confusion_matrix": [
+      [
+        7,
+        2,
+        9,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        13,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        17,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "openai/gpt-4.1-nano",
+    "mode": "zero-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1787,
+    "macro_f1_ci95": [
+      0.3573074285732219,
+      0.5437417729329493
     ],
     "transport_errors": 0,
     "malformed_responses": 0
@@ -387,10 +651,10 @@
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
     "mode": "four-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1784,
+    "bootstrap_valid_draws": 1800,
     "macro_f1_ci95": [
-      0.6684067484051037,
-      0.9287024072952065
+      0.6620419130765548,
+      0.9258490566037736
     ],
     "transport_errors": 0,
     "malformed_responses": 0
@@ -453,13 +717,403 @@
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
     "mode": "zero-shot",
     "source_groups": 8,
-    "bootstrap_valid_draws": 1789,
+    "bootstrap_valid_draws": 1813,
     "macro_f1_ci95": [
-      0.3303492388758782,
-      0.6925055518805519
+      0.3311705071746775,
+      0.6913404030180346
     ],
     "transport_errors": 0,
     "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.7875,
+    "macro_f1": 0.7665191581447739,
+    "balanced_accuracy": 0.7875,
+    "per_class_f1": {
+      "CR": 0.4827586206896552,
+      "LP": 0.7755102040816326,
+      "ND": 0.8888888888888888,
+      "PO": 0.918918918918919
+    },
+    "per_class_recall": {
+      "CR": 0.35,
+      "LP": 0.95,
+      "ND": 1.0,
+      "PO": 0.85
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.00431808,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.053975999999999996,
+    "latency_mean_s": 2.187034560914617,
+    "latency_p95_s": 2.947964495196356,
+    "confusion_matrix": [
+      [
+        7,
+        10,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        19,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        17,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "four-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1793,
+    "macro_f1_ci95": [
+      0.6424757758230556,
+      0.8391131087642716
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.575,
+    "macro_f1": 0.5496000516896039,
+    "balanced_accuracy": 0.575,
+    "per_class_f1": {
+      "CR": 0.32,
+      "LP": 0.42424242424242425,
+      "ND": 0.5970149253731343,
+      "PO": 0.8571428571428571
+    },
+    "per_class_recall": {
+      "CR": 0.2,
+      "LP": 0.35,
+      "ND": 1.0,
+      "PO": 0.75
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.45,
+    "cost_usd": 0.0019552,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.024439999999999996,
+    "latency_mean_s": 1.5404297474095074,
+    "latency_p95_s": 2.134891062529641,
+    "confusion_matrix": [
+      [
+        4,
+        6,
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        4,
+        15,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "zero-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1798,
+    "macro_f1_ci95": [
+      0.4496611360131097,
+      0.6041796047626848
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.875,
+    "macro_f1": 0.8664992335040281,
+    "balanced_accuracy": 0.875,
+    "per_class_f1": {
+      "CR": 0.7096774193548387,
+      "LP": 0.8260869565217391,
+      "ND": 0.9302325581395349,
+      "PO": 1.0
+    },
+    "per_class_recall": {
+      "CR": 0.55,
+      "LP": 0.95,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.05,
+    "cost_usd": 0.00485056,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.060632000000000005,
+    "latency_mean_s": 1.5464261056877149,
+    "latency_p95_s": 2.3258767785097008,
+    "confusion_matrix": [
+      [
+        11,
+        7,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        19,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        20,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "qwen/qwen3-vl-8b-instruct",
+    "mode": "four-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1773,
+    "macro_f1_ci95": [
+      0.6907701004665541,
+      0.9736738708539168
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 80,
+    "accuracy": 0.5125,
+    "macro_f1": 0.4639419404125287,
+    "balanced_accuracy": 0.5125,
+    "per_class_f1": {
+      "CR": 0.18181818181818182,
+      "LP": 0.22857142857142856,
+      "ND": 0.5882352941176471,
+      "PO": 0.8571428571428571
+    },
+    "per_class_recall": {
+      "CR": 0.1,
+      "LP": 0.2,
+      "ND": 1.0,
+      "PO": 0.75
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.4666666666666667,
+    "cost_usd": 0.00219232,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.027404000000000005,
+    "latency_mean_s": 1.477918493213656,
+    "latency_p95_s": 3.7029234600951892,
+    "confusion_matrix": [
+      [
+        2,
+        11,
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        16,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        15,
+        0
+      ]
+    ],
+    "stage": "test",
+    "model": "qwen/qwen3-vl-8b-instruct",
+    "mode": "zero-shot",
+    "source_groups": 8,
+    "bootstrap_valid_draws": 1789,
+    "macro_f1_ci95": [
+      0.34067605552580327,
+      0.5967702097497991
+    ],
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 1.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.00273792,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.17112,
+    "latency_mean_s": 2.4192046926946205,
+    "latency_p95_s": 2.719038271025056,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "stage": "validation",
+    "model": "amazon/nova-lite-v1",
+    "mode": "four-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 16
+  },
+  {
+    "n": 16,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 1.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.00068352,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.042719999999999994,
+    "latency_mean_s": 1.211340882749937,
+    "latency_p95_s": 1.6172929474996636,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "stage": "validation",
+    "model": "amazon/nova-lite-v1",
+    "mode": "zero-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 16
   },
   {
     "n": 16,
@@ -716,6 +1370,132 @@
   {
     "n": 16,
     "accuracy": 0.6875,
+    "macro_f1": 0.6468975468975469,
+    "balanced_accuracy": 0.6875,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.5714285714285714,
+      "ND": 0.8888888888888888,
+      "PO": 0.7272727272727273
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.0015696,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.09809999999999999,
+    "latency_mean_s": 2.7151147708245844,
+    "latency_p95_s": 5.618200676763081,
+    "confusion_matrix": [
+      [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "openai/gpt-4.1-nano",
+    "mode": "four-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.5625,
+    "macro_f1": 0.5523809523809523,
+    "balanced_accuracy": 0.5625,
+    "per_class_f1": {
+      "CR": 0.5714285714285714,
+      "LP": 0.4,
+      "ND": 0.5714285714285714,
+      "PO": 0.6666666666666666
+    },
+    "per_class_recall": {
+      "CR": 0.5,
+      "LP": 0.25,
+      "ND": 1.0,
+      "PO": 0.5
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.5,
+    "cost_usd": 0.00052,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.032499999999999994,
+    "latency_mean_s": 1.5539168515606434,
+    "latency_p95_s": 2.606985301768873,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "openai/gpt-4.1-nano",
+    "mode": "zero-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.6875,
     "macro_f1": 0.5944444444444444,
     "balanced_accuracy": 0.6875,
     "per_class_f1": {
@@ -832,6 +1612,258 @@
     ],
     "stage": "validation",
     "model": "qwen/qwen3-vl-30b-a3b-instruct",
+    "mode": "zero-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.6875,
+    "macro_f1": 0.6085858585858586,
+    "balanced_accuracy": 0.6875,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.5454545454545454,
+      "ND": 0.8888888888888888,
+      "PO": 1.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.75,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.000863616,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.053975999999999996,
+    "latency_mean_s": 2.0864821613795357,
+    "latency_p95_s": 2.467440687236376,
+    "confusion_matrix": [
+      [
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "four-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.4375,
+    "macro_f1": 0.35396825396825393,
+    "balanced_accuracy": 0.4375,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.4444444444444444,
+      "ND": 0.5714285714285714,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.5,
+    "cost_usd": 0.00039104,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.02444,
+    "latency_mean_s": 1.609107924556156,
+    "latency_p95_s": 1.9844290942273801,
+    "confusion_matrix": [
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "zero-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.75,
+    "macro_f1": 0.7222222222222222,
+    "balanced_accuracy": 0.75,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.6,
+      "ND": 0.8888888888888888,
+      "PO": 1.0
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.75,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.000970112,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.060632,
+    "latency_mean_s": 1.592213213632931,
+    "latency_p95_s": 2.375839312269818,
+    "confusion_matrix": [
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "qwen/qwen3-vl-8b-instruct",
+    "mode": "four-shot",
+    "source_groups": 5,
+    "bootstrap_valid_draws": 0,
+    "macro_f1_ci95": null,
+    "transport_errors": 0,
+    "malformed_responses": 0
+  },
+  {
+    "n": 16,
+    "accuracy": 0.5,
+    "macro_f1": 0.43162393162393164,
+    "balanced_accuracy": 0.5,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.4444444444444444,
+      "ND": 0.6153846153846154,
+      "PO": 0.6666666666666666
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 0.5
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.4166666666666667,
+    "cost_usd": 0.000438464,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.027404,
+    "latency_mean_s": 1.1707642238725384,
+    "latency_p95_s": 1.647773301723646,
+    "confusion_matrix": [
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    ],
+    "stage": "validation",
+    "model": "qwen/qwen3-vl-8b-instruct",
     "mode": "zero-shot",
     "source_groups": 5,
     "bootstrap_valid_draws": 0,

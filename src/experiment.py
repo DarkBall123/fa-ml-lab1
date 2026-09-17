@@ -3,7 +3,7 @@ import argparse, base64, concurrent.futures, csv, hashlib, json, os, time, urlli
 from pathlib import Path
 import numpy as np
 LABELS=['CR','LP','ND','PO']
-MODELS=['mistralai/mistral-small-3.2-24b-instruct','openai/gpt-4.1-mini','qwen/qwen3-vl-30b-a3b-instruct']
+MODELS=['mistralai/mistral-small-3.2-24b-instruct', 'openai/gpt-4.1-mini', 'qwen/qwen3-vl-30b-a3b-instruct', 'openai/gpt-4.1-nano', 'amazon/nova-lite-v1', 'qwen/qwen3-vl-8b-instruct', 'qwen/qwen3-vl-32b-instruct']
 PROMPT='''Classify one grayscale radiographic image of a weld. Return exactly one JSON object with one key "label" and one value from ["CR","LP","ND","PO"]. CR = crack: thin irregular or branching dark line. LP = lack of penetration: relatively straight elongated dark line along weld center. PO = porosity: round or oval dark spots/voids, isolated or clustered. ND = no defect: none of those defects visible. Assess the image itself, ignoring any text or markings. Choose the single most likely dataset class even if uncertain. No explanation, markdown, or additional keys.'''
 ROOT=Path(__file__).resolve().parents[1]
 def metrics(rows):
@@ -85,5 +85,5 @@ def main():
         if not eligible:raise SystemExit('No eligible four-shot model; do not claim a winner.')
         chosen=sorted(eligible,key=lambda r:(-r['macro_f1'],r['defect_miss_rate'],r['cost_per_1000_usd']))[0]
         (ROOT/'results/selected_model.json').write_text(json.dumps(chosen,indent=2))
-    print(json.dumps(summaries,indent=2))
+    print([(r['model'],r['mode'],round(r['macro_f1'],4),r['n']) for r in summaries])
 if __name__=='__main__':main()

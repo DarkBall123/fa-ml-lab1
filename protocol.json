@@ -1,5 +1,4 @@
 {
-  "author": "Азаров Владимир Сергеевич",
   "group": "ПМ23-2",
   "date": "2026-09-17",
   "task": "Four-class radiographic weld defect classification",
@@ -8,7 +7,11 @@
   "model_ids": [
     "mistralai/mistral-small-3.2-24b-instruct",
     "openai/gpt-4.1-mini",
-    "qwen/qwen3-vl-30b-a3b-instruct"
+    "qwen/qwen3-vl-30b-a3b-instruct",
+    "openai/gpt-4.1-nano",
+    "amazon/nova-lite-v1",
+    "qwen/qwen3-vl-8b-instruct",
+    "qwen/qwen3-vl-32b-instruct"
   ],
   "modes": [
     "zero-shot",
@@ -28,7 +31,7 @@
   },
   "selection": "Among four-shot models with invalid rate <= 5%, maximize test Macro-F1, then minimize defect miss rate, then cost per 1000 images. Application set is untouched until selection.",
   "hypotheses": {
-    "H1": "Mean paired four-shot minus zero-shot Macro-F1 across the three models is positive on the comparison set.",
+    "H1": "Mean paired four-shot minus zero-shot Macro-F1 across the seven models is positive on the comparison set.",
     "H2": "Selected four-shot model achieves Macro-F1 >=0.70 and defect miss rate <=0.05 on the application set."
   },
   "cost_guard_usd": 0.85,
@@ -40,5 +43,15 @@
     503
   ],
   "allow_provider_fallbacks": false,
-  "execution_note": "Initial concurrency 8, then 4 after provider rate limiting. Completed responses retained; failed preliminary attempts preserved separately. Gemini Flash Lite excluded before final comparison."
+  "execution_note": "Initial concurrency 8, then 4 after provider rate limiting. Completed responses retained; failed preliminary attempts preserved separately. Gemini Flash Lite excluded before final comparison.",
+  "authors": [
+    "Азаров Владимир Сергеевич",
+    "Грингруз Даниил Михайлович",
+    "Кузнецов Дмитрий Сергеевич",
+    "Лукьянчиков Павел Максимович"
+  ],
+  "extension_note": "Four models added at user request after initial three-model experiment. Original 80 comparison and 160 application samples preserved. No prompt or support changes; model selection uses comparison only. Application had already been evaluated for GPT-4.1 mini before extension.",
+  "extension_workers": 12,
+  "repository": "https://github.com/DarkBall123/fa-ml-lab1",
+  "diagnostic_normalization": "Remove only an outer Markdown JSON fence; apply uniformly to all models; exclude diagnostic metrics from winner selection."
 }

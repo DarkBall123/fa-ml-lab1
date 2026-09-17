@@ -1,5 +1,5 @@
 """Recalculate metrics, uncertainty, error inventory, and integrity checks offline."""
-import csv,json,collections
+import csv,json,collections,re
 from pathlib import Path
 import numpy as np
 from experiment import metrics,LABELS,MODELS
@@ -14,6 +14,24 @@ def main():
     for i,a in enumerate(stages):
         for b in stages[i+1:]:
             assert not ({r['source_group'] for r in manifest if r['split']==a}&{r['source_group'] for r in manifest if r['split']==b})
+    diagnostic=[]
+    for model in MODELS:
+        for mode in ['zero-shot','four-shot']:
+            sample=[r for r in rows if r['stage']=='test' and r['model']==model and r['mode']==mode]
+            assert len(sample)==80,(model,mode,len(sample))
+            normalized=[];recovered=0
+            for r in sample:
+                q=dict(r)
+                if q['prediction'] is None and not q.get('error'):
+                    match=re.fullmatch(r'```(?:json)?\s*(.*?)\s*```',q.get('text','').strip(),re.S)
+                    if match:
+                        try:
+                            obj=json.loads(match.group(1))
+                            if isinstance(obj,dict) and set(obj)=={'label'} and obj['label'] in LABELS:q['prediction']=obj['label'];recovered+=1
+                        except ValueError:pass
+                normalized.append(q)
+            diagnostic.append({'model':model,'mode':mode,'recovered_fenced_json':recovered,**metrics(normalized)})
+    (ROOT/'results/normalized_diagnostic.json').write_text(json.dumps(diagnostic,indent=2))
     summary=[];rng=np.random.default_rng(17092026)
     for (stage,model,mode),group in __import__('itertools').groupby(sorted(rows,key=lambda r:(r['stage'],r['model'],r['mode'])),lambda r:(r['stage'],r['model'],r['mode'])):
         sample=list(group);m=metrics(sample);groups=collections.defaultdict(list)

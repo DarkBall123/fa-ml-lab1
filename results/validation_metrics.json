@@ -340,5 +340,461 @@
         0
       ]
     ]
+  },
+  {
+    "model": "openai/gpt-4.1-nano",
+    "mode": "zero-shot",
+    "n": 16,
+    "accuracy": 0.5625,
+    "macro_f1": 0.5523809523809523,
+    "balanced_accuracy": 0.5625,
+    "per_class_f1": {
+      "CR": 0.5714285714285714,
+      "LP": 0.4,
+      "ND": 0.5714285714285714,
+      "PO": 0.6666666666666666
+    },
+    "per_class_recall": {
+      "CR": 0.5,
+      "LP": 0.25,
+      "ND": 1.0,
+      "PO": 0.5
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.5,
+    "cost_usd": 0.00052,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.032499999999999994,
+    "latency_mean_s": 1.5539168515606434,
+    "latency_p95_s": 2.606985301768873,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "openai/gpt-4.1-nano",
+    "mode": "four-shot",
+    "n": 16,
+    "accuracy": 0.6875,
+    "macro_f1": 0.6468975468975469,
+    "balanced_accuracy": 0.6875,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.5714285714285714,
+      "ND": 0.8888888888888888,
+      "PO": 0.7272727272727273
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.0015696,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.09809999999999999,
+    "latency_mean_s": 2.7151147708245844,
+    "latency_p95_s": 5.618200676763081,
+    "confusion_matrix": [
+      [
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "amazon/nova-lite-v1",
+    "mode": "zero-shot",
+    "n": 16,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 1.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.00068352,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.042719999999999994,
+    "latency_mean_s": 1.211340882749937,
+    "latency_p95_s": 1.6172929474996636,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ]
+  },
+  {
+    "model": "amazon/nova-lite-v1",
+    "mode": "four-shot",
+    "n": 16,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.0,
+      "ND": 0.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 1.0,
+    "defect_miss_rate": 0.0,
+    "cost_usd": 0.00273792,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.17112,
+    "latency_mean_s": 2.4192046926946205,
+    "latency_p95_s": 2.719038271025056,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-8b-instruct",
+    "mode": "zero-shot",
+    "n": 16,
+    "accuracy": 0.5,
+    "macro_f1": 0.43162393162393164,
+    "balanced_accuracy": 0.5,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.4444444444444444,
+      "ND": 0.6153846153846154,
+      "PO": 0.6666666666666666
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 0.5
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.4166666666666667,
+    "cost_usd": 0.000438464,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.027404,
+    "latency_mean_s": 1.1707642238725384,
+    "latency_p95_s": 1.647773301723646,
+    "confusion_matrix": [
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-8b-instruct",
+    "mode": "four-shot",
+    "n": 16,
+    "accuracy": 0.75,
+    "macro_f1": 0.7222222222222222,
+    "balanced_accuracy": 0.75,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.6,
+      "ND": 0.8888888888888888,
+      "PO": 1.0
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.75,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.000970112,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.060632,
+    "latency_mean_s": 1.592213213632931,
+    "latency_p95_s": 2.375839312269818,
+    "confusion_matrix": [
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "zero-shot",
+    "n": 16,
+    "accuracy": 0.4375,
+    "macro_f1": 0.35396825396825393,
+    "balanced_accuracy": 0.4375,
+    "per_class_f1": {
+      "CR": 0.4,
+      "LP": 0.4444444444444444,
+      "ND": 0.5714285714285714,
+      "PO": 0.0
+    },
+    "per_class_recall": {
+      "CR": 0.25,
+      "LP": 0.5,
+      "ND": 1.0,
+      "PO": 0.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.5,
+    "cost_usd": 0.00039104,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.02444,
+    "latency_mean_s": 1.609107924556156,
+    "latency_p95_s": 1.9844290942273801,
+    "confusion_matrix": [
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "model": "qwen/qwen3-vl-32b-instruct",
+    "mode": "four-shot",
+    "n": 16,
+    "accuracy": 0.6875,
+    "macro_f1": 0.6085858585858586,
+    "balanced_accuracy": 0.6875,
+    "per_class_f1": {
+      "CR": 0.0,
+      "LP": 0.5454545454545454,
+      "ND": 0.8888888888888888,
+      "PO": 1.0
+    },
+    "per_class_recall": {
+      "CR": 0.0,
+      "LP": 0.75,
+      "ND": 1.0,
+      "PO": 1.0
+    },
+    "invalid_rate": 0.0,
+    "defect_miss_rate": 0.08333333333333333,
+    "cost_usd": 0.000863616,
+    "cost_missing_count": 0,
+    "cost_per_1000_usd": 0.053975999999999996,
+    "latency_mean_s": 2.0864821613795357,
+    "latency_p95_s": 2.467440687236376,
+    "confusion_matrix": [
+      [
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ]
   }
 ]

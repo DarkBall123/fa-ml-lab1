@@ -1,0 +1,12 @@
+[
+{"id":1,"short":"Dosovitskiy et al., 2021","method":"ViT; классификация изображений","finding":"Трансформер обрабатывает патчи изображения","limit":"Нет проверки на RIAWELC","url":"https://arxiv.org/abs/2010.11929"},
+{"id":2,"short":"Snell et al., 2017","method":"Prototypical Networks; few-shot","finding":"Класс определяется по расстоянию до прототипа","limit":"Нужен обученный экстрактор признаков","url":"https://arxiv.org/abs/1703.05175"},
+{"id":3,"short":"Brown et al., 2020","method":"GPT-3; примеры в запросе","finding":"Адаптация к задаче без обновления весов","limit":"В работе оцениваются языковые задачи","url":"https://arxiv.org/abs/2005.14165"},
+{"id":4,"short":"Alayrac et al., 2022","method":"Flamingo; изображения и текст","finding":"Визуальное обучение по примерам в контексте","limit":"Нет оценки сварных швов в нашем протоколе","url":"https://arxiv.org/abs/2204.14198"},
+{"id":5,"short":"Contreras Ortiz et al., 2025","method":"ViT; Aluminium 5083 TIG","finding":"Сравнение при разных объемах обучения","limit":"Другой набор и режим обучения","url":"https://doi.org/10.3390/mca30020024"},
+{"id":6,"short":"Totino et al., 2023","method":"RIAWELC; четыре класса сварных швов","finding":"Описан набор рентгеновских фрагментов","limit":"Исходное разбиение проверяется на копии отдельно","url":"https://doi.org/10.53375/ijecer.2023.320"},
+{"id":7,"short":"Oquab et al., 2023","method":"DINOv2; ViT без разметки","finding":"Перенос визуальных признаков на другие задачи","limit":"Не готовый классификатор дефектов сварки","url":"https://arxiv.org/abs/2304.07193"},
+{"id":8,"short":"Jeong et al., 2023","method":"WinCLIP; MVTec-AD и VisA","finding":"Zero-shot и few-normal-shot поиск аномалий","limit":"Метрики аномалий не равны четырехклассовому F1","url":"https://arxiv.org/abs/2303.14814"},
+{"id":9,"short":"Gu et al., 2024","method":"AnomalyGPT; MVTec-AD","finding":"VLM с декодером и адаптацией промпта","limit":"Использует специальную подготовку модели","url":"https://arxiv.org/abs/2308.15366"},
+{"id":10,"short":"Bai et al., 2025","method":"Qwen3-VL; dense и MoE","finding":"Семейство моделей для текста и изображений","limit":"Общие бенчмарки не заменяют проверку RIAWELC","url":"https://arxiv.org/abs/2511.21631"}
+]
